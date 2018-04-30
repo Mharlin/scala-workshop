@@ -6,4 +6,8 @@
 5. When doing a checkout calculate the total amount and discount and also the total amount and the
    discount per category
 
+Todo:
+Update presentation with instructios for the exercise
+
+
 
