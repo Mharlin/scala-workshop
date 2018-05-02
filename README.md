@@ -4,6 +4,8 @@ Scala for Java developers workshop
 Before the workshop install [SBT](https://www.scala-sbt.org/1.0/docs/Setup.html)
 If you want an IDE to work with follow the instructions on [Scala site](https://www.scala-lang.org/download/)
 
+The presentation can be found at (mharlin.github.io/scala-workshop)[https://mharlin.github.io/scala-workshop/]
+
 ## Exercise part 1
 - Load the project in folder `exercise` and run the tests
 - Fulfill the tests by implement the parsing of a CSV string "Magnus H, 38" should produce an instance of the User class.

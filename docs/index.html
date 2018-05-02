@@ -302,8 +302,8 @@ Note:
                 <code class="scala" data-trim data-noescape>
                   object User {
                     def fromString(name: String) = {
-                      val parts = name.split(' ')
-                      User(parts[0], parts[1])
+                      val Array(firstName, surname) = name.split(' ')
+                      User(firstName, surname)
                     }
                   }
                 </code>
@@ -429,7 +429,8 @@ Note:
                 <code data-trim data-noescape class="java fragment" >
                   public static String getLongest(String[] strings) {
                     String longestString = "";
-		    int maxLength = 0;
+                    int maxLength = 0;
+
                     for (String s : strings) {
                       if (s.length() > longestString.length()) {
                           maxLength = s.length();
@@ -523,14 +524,17 @@ Note:
              <code data-trim class="scala" >
                users.flatMap(u => u.orders.flatMap(o => o.products))
                # Seq[Product]
+            </code>
 
+            <code data-trim class="scala fragment" >
                for {
                  user <- users
                  orders <- user.orders
                  products <- orders.products
                } yield products
                # Seq[Product]
-             </code>
+               </span>
+            </code>
             </pre>
           </section>
         </section>
