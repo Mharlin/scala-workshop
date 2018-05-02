@@ -1,13 +1,7 @@
-1. Parse csv with user info to User(name: String, age: Option[Int]) from string "Magnus H, 38"
-2. Change the User class to a trait  with the same fields trait and some implementations: Customer and Nerd
-3. Create Product(name: String, category: String, price: Double) and Order(products: Seq[Product])
-4. A customer is VIP if they have an order worth more than 1000
-4. If a User is VIP customer give 10% discount, if user is Nerd give additional 15% discount if category is "Tech"
-5. When doing a checkout calculate the total amount and discount and also the total amount and the
-   discount per category
-
-Todo:
-Update presentation with instructios for the exercise
-
-
-
+Timing: Session start time: 10:10
+Presentation of: Why, mutable state and Options - 10 minutes -- 10:10 - 10:20
+Exercise 1: 20 minutes -- 10:20 - 10:40
+Presentation of: Case classes, pattern matching, concurrency, functional: 15 minutes -- 10:40 - 10:55
+Exercise 2: 35 minutes -- 10:55 - 11:30
+Presentation of: Things that might confuse, ending and questions: 5 minutes -- 11:30 - 11:35
+Session end time: 11:40

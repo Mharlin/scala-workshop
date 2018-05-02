@@ -47,7 +47,7 @@ object Checkout {
 
     val pricePerCategory = user.orders.flatMap(_.products)
       .groupBy(p => p.category)
-      .map(grouped => CategoryPrice(grouped._1, Price(grouped._2.map(_.price).sum, 0)))
+      .map(grouped => CategoryPrice(grouped._1, Price(grouped._2.map(_.price).sum, 0))) // Destructure with a match
       .map(c => {
         val vipDiscount = calculateVipDiscount(c.price.amount)
         val nerdDiscount = calculateNerdDiscount(c.category, c.price.amount)
