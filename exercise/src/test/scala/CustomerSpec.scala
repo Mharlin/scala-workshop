@@ -1,8 +1,10 @@
 package scalaworkshop
 
-import org.scalatest._
+import org.scalatest.*
+import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.matchers.*
 
-class UserSpec extends FlatSpec with Matchers {
+class UserSpec extends AnyFlatSpec with should.Matchers {
   //Exercise part 1 parse csv strings
   it should "parse user with age" in {
     User.parseUser("Magnus H, 38") should be (User("Magnus H", Some(38)))

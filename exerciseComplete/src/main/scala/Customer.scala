@@ -12,7 +12,7 @@ sealed trait User {
 object User {
   // Expected comma separated string. i.e. "Magnus H, 38"
   // Age can also be an emtpy string or invalid number
-  def parseUser(input: String) = {
+  def parseUser(input: String): Customer = {
     val Array(name, unparsedAge) = input.split(',').map(_.trim)
     val age = Try(unparsedAge.toInt).toOption
     Customer(name, age, Seq.empty)
